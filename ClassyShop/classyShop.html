@@ -1,0 +1,2596 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="classyShop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+
+<body style="background-color: #F8F8F8;">
+
+    <!-- Customer theme -->
+    <div class="theme-customizer shadow  bg-white z-3">
+        <div class="position-absolute rounded-start-5 customizer-icon "
+            style="cursor: pointer; top: 5%;left: -55px;background-color: white; padding: 15px;">
+            <img src="img&icon/indir.png" width="35px" height="35px" alt="">
+        </div>
+        <div style="width: 300px;height: 600px; padding: 15px;">
+            <h2>Theme Customizer</h2>
+            <p>Default Skins</p>
+            <div class="color-box" style="background-color: #408A9E;"></div>
+            <div class="color-box" style="background-color: #FF5F1F;"></div>
+            <div class="color-box" style="background-color: #6C75F0;"></div>
+            <div class="color-box" style="background-color: #D62492;"></div>
+            <div class="color-box" style="background-color: #59B210;"></div>
+            <div class="color-box" style="background-color: #059473;"></div>
+            <div class="color-box" style="background-color: #E51A17;"></div>
+            <div class="color-box" style="background-color: #273647;"></div>
+            <hr>
+            <div class="d-flex justify-content-between">
+                <p>primary color</p>
+                <input id="primary-color" type="color">
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Navbar top -->
+    <div class="navbar-top-wall">
+        <div class="container-lg  roboto-font" style="padding: 0px 9px;">
+            <div class="navbar-top">
+                <p style="margin-bottom: 0px;">Get up to 50% off new season styles, limited time only</p>
+                <ul class="nav navbar-top">
+                    <li class="nav-item"><a href="#" class="nav-link">Help center</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Order Tracking</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">
+                            <img src="img&icon/https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/l/1.jpg"
+                                alt="">
+                            English
+                        </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">USD</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="container-lg roboto-font py-2">
+        <div class="row justify-content-between">
+
+            <div class="col-3 col-xl-2 col-lg-3 col-6 order-1 order-lg-1 justify-content-between">
+                <a href="">
+                    <img src="img&icon/logo-1691412328.jpg" alt="Logo">
+                </a>
+            </div>
+            <div class="col-xxl-7 col-xl-6 col-lg-5 col-12 order-3 order-lg-2 mx-auto mt-3 mt-lg-0">
+                <div class="row justify-content-xxl-center justify-content-end">
+                    <div class="col-8 col-lg-7 pe-0">
+                        <input type="search" class=" form-control roboto-font" placeholder="Search products here...">
+                    </div>
+                    <div class="col-4 col-lg-3">
+                        <button type="button" class="btn float-end float-md-start text-white">Search</button>
+                    </div>
+
+                </div>
+            </div>
+            <div
+                class="col-xxl-3 col-xl-4 col-lg-4 col-6 order-2 order-lg-3 position-relative d-flex justify-content-xl-between align-items-center justify-content-end">
+                <div class="user-operatings fs-6  ">
+                    <a href="#">Login</a>
+                    /
+                    <a href="#">Register</a>
+                </div>
+                <div class="navbar-icon d-inline">
+                    <a href="#" class="user-operatings-icon">
+                        <i class="fa-solid fa-size fa-user m-2 m-sm-3"></i>
+                    </a>
+                    <a href="#" class="position-relative">
+                        <i class="fa-solid fa-size fa-check m-2 m-sm-3 "></i>
+                        <span class="badge position-absolute translate-middle top-0 end-0">0</span>
+                    </a>
+                    <a href="#" class="position-relative">
+                        <i class="fa-solid fa-size  fa-heart  m-2 m-sm-3"></i>
+                        <span class="badge position-absolute translate-middle top-0 end-0">0</span>
+                    </a>
+                    <a href="#" class="position-relative">
+                        <i class="fa-solid fa-size  fa-cart-shopping m-2 m-sm-3"></i>
+                        <span class="badge position-absolute translate-middle top-0 end-0">0</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <hr style="color: #666666;margin-top: 4px;" class="d-none d-lg-block">
+
+    <!-- Navbar-end -->
+    <div class="container-lg mb-3 roboto-font d-none d-lg-block">
+        <ul class="nav navbar-menu position-relative">
+            <li class="nav-item me-4 categories">
+                <i class="fa-solid fa-xl fa-bars"></i>
+                <a href="#" class="ms-2">Shop by Categories</a>
+            </li>
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">Fashion</a></li>
+            <li class="nav-item"><a href="#">New arrivals</a></li>
+            <li class="nav-item"><a href="#">All brands</a></li>
+            <li class="nav-item"><a href="#">Best Deals</a></li>
+            <li class="nav-item"><a href="#">Blog</a></li>
+            <li class="nav-item ms-auto d-none d-xl-inline">
+                <i class="fa-solid fa-rocket me-2 fa-xl"></i>
+                Free International Delivery
+            </li>
+        </ul>
+    </div>
+
+    <!-- hero banner -->
+    <div style="background-color: #F5F0F0;">
+
+        <!--  hero banner  -->
+        <div class="container-lg  roboto-font">
+            <div class="d-lg-flex ">
+
+                <div id="carousel-hero-banner"
+                    class=" float-start icerik1 overflow-hidden carousel slide carousel-fade position-relative">
+                    <div style="padding-right: 1.5rem;">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel-hero-banner" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel-hero-banner" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+
+                        <div class="carousel-inner  rounded-3 position-relative">
+                            <div class="carousel-item  active">
+                                <img src="img&icon/sample-1.jpg" class="img-fluid" alt="">
+                                <div class="row">
+                                    <div class="slider-text col-6">
+                                        <p class="text1">Big Saving Days Sale</p>
+                                        <p class="text2">Women Solid Round Green T-Shirt</p>
+                                        <p class="text3 ">Starting At Only <span>$59.00</span></p>
+                                        <button class="btn btn-sm text-white">SHOP NOW</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item rounded-3 position-relative">
+                                <img src="img&icon/sample-2.jpg" class="img-fluid" alt="">
+                                <div class="row ">
+                                    <div class="slider-text col-6 ">
+                                        <p class="text1">Big Saving Days Sale</p>
+                                        <p class="text2">Buy Modern Chair In Black Color</p>
+                                        <p class="text3 ">Starting At Only <span>$99.00</span></p>
+                                        <button class="btn btn-sm text-white">SHOP NOW</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <button class=" carousel-control-prev carousel-button translate-middle top-50" type="button"
+                                data-bs-target="#carousel-hero-banner" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon span-left" aria-hidden="true"></span>
+                            </button>
+                            <button class="carousel-control-next carousel-button translate-middle top-50" type="button"
+                                data-bs-target="#carousel-hero-banner" data-bs-slide="next">
+                                <span class="carousel-control-next-icon span-right" aria-hidden="true"></span>
+                            </button>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+                <div
+                    class=" icerik2 d-flex gap-4 flex-column flex-sm-row flex-md-column justify-content-between align-items-center  ">
+                    <div class="overflow-hidden icerik-img1 rounded-3 position-relative">
+                        <img src="img&icon/sub-banner-1.jpg" class="img1 img-fluid rounded-3" alt="">
+
+                        <div style="top: 10%;left: 10%;"
+                            class="col-6 col-sm-7 icerik-text d-flex flex-column  position-absolute ">
+                            <p>Samsung Gear VR Camera</p>
+                            <span>$129.00</span>
+                            <a href="#">SHOP NOW</a>
+                        </div>
+
+
+                    </div>
+                    <div class="overflow-hidden icerik-img2 rounded-3 position-relative">
+                        <img src="img&icon/sub-banner-2.jpg" class="img2 img-fluid rounded-3" alt="">
+
+                        <div style="top: 10%; right:-10px;"
+                            class="col-6 col-sm-7  icerik-text d-flex flex-column   position-absolute ">
+                            <p>Samsung Gear VR Camera</p>
+                            <span>$129.00</span>
+                            <a href="#">SHOP NOW</a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <!-- product slider  -->
+        <div class="container-lg slider-wall container-fluid roboto-font position-relative" style="clear: both;">
+            <div class="owl-carousel slider-1 product-slider owl-theme">
+                <div class="item">
+                    <img src="img&icon/urun1.1.jpg" class="img-fluid">
+                    <div class="product-slider-text">
+                        <a href="#" class="stretched-link">Crebe T-Shirt</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img&icon/urun1.2.jpg" class="img-fluid">
+                    <div class="product-slider-text">
+                        <a href="#" class="stretched-link">Leather Watch</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img&icon/urun1.3.jpg" class="img-fluid">
+                    <div class="product-slider-text">
+                        <a href="#">Rolling Diamond</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img&icon/urun1.4.jpg" class="img-fluid">
+                    <div class="product-slider-text">
+                        <a href="#">Wooden Chair</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img&icon/urun1.5.jpg" class="img-fluid">
+                    <div class="product-slider-text">
+                        <a href="#">Sneakers Shoes</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img&icon/urun1.6.jpg" class="img-fluid">
+                    <div class="product-slider-text">
+                        <a href="#">Purse</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img&icon/urun1.7.jpg" class="img-fluid">
+                    <div class="product-slider-text">
+                        <a href="#">Xbox Controller</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img&icon/urun1.8.jpg" class="img-fluid">
+                    <div class="product-slider-text">
+                        <a href="#">Smart Tabled</a>
+                    </div>
+                </div>
+            </div>
+            <button class="btn slider-prev-btn slider-btn  position-absolute translate-middle top-50 z-2 rounded-circle"
+                style="padding: 2px 8px;left: 27px;">
+                <i class="fa-solid fa-sm fa-less-than p-0 m-0"></i>
+            </button>
+            <button class="btn slider-next-btn slider-btn position-absolute translate-middle top-50 z-2 rounded-circle"
+                style="padding: 2px 8px; right: 0;">
+                <i class="fa-solid fa-sm fa-greater-than p-0 m-0"></i>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- promotion banner -->
+    <div class="container-fluid container-lg">
+        <div class="promotion-banner">
+            <div class="position-relative row roboto-font d-flex ">
+
+                <div class="col-12 col-lg-3 ">
+                    <i class="fa-solid fa-2xl fa-truck fa-flip-horizontal d-none d-lg-inline" style="color: black;"></i>
+                    <p class="promotion-banner-text1">FREE SHIPPING</p>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <p class="promotion-banner-text2">Free Delivery Now On Your First Order and Over $200</p>
+                </div>
+
+                <div class="col-12 col-lg-3">
+                    <p class="promotion-banner-text3">-Only $200*</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- cmsBanner -->
+    <div class="container-fluid container-lg">
+        <div class="row cmsBanner ">
+            <div class="col-md cmsBanner-item position-relative">
+                <div class="position-relative overflow-hidden ">
+                    <img class="img-fluid" src="img&icon/cms-banner-1.jpg" alt="">
+                    <div class="cmsBanner-text-wall row position-absolute  w-100 h-100">
+                        <div class="col-6 col-xxl-6 ms-auto p-0 ">
+                            <div class="row">
+                                <div class="cmsBanner-text col-10 col-md-10 mx-auto">
+                                    <p>S22 Samsung Smartphone</p>
+                                    <span>$250.00</span>
+                                    <a href="#">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md cmsBanner-item position-relative">
+                <div class="position-relative overflow-hidden">
+                    <img class="img-fluid" src="img&icon/cms-banner-2.jpg" alt="">
+                    <div class="cmsBanner-text-wall row position-absolute  w-100 h-100">
+                        <div class="col-6 col-xxl-6 ms-auto p-0">
+                            <div class="row">
+                                <div class="cmsBanner-text col-10 col-md-10 mx-auto">
+                                    <p>Armchair Mad By Shopstic</p>
+                                    <span>$190.00</span>
+                                    <a href="#">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md cmsBanner-item position-relative">
+                <div class="position-relative overflow-hidden">
+                    <img class="img-fluid" src="img&icon/cms-banner-3.jpg" alt="">
+                    <div class="cmsBanner-text-wall row position-absolute  w-100 h-100">
+                        <div class="col-6 col-lg-7 col-xxl-6 ms-auto p-0">
+                            <div class="row">
+                                <div class="cmsBanner-text col-10 col-md-10 mx-auto">
+                                    <p>Noise Wireless Headphones</p>
+                                    <span>$129.00</span>
+                                    <a href="#">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <!-- product slider -->
+    <div class="container-fluid container-lg product">
+
+        <!-- slider navbar -->
+        <div class="d-flex slider-navbar roboto-font">
+            <ul class="nav">
+                <li class="nav-item ">
+                    <a id="fashion" class="nav-link" style="cursor: pointer;">Fashion</a>
+                </li>
+                <li class="nav-item">
+                    <a id="electronic" class="nav-link" style="cursor: pointer;">Electronic</a>
+                </li>
+                <li class="nav-item">
+                    <a id="furniture" class="nav-link " style="cursor: pointer;">Furniture</a>
+                </li>
+            </ul>
+            <button class="btn ms-auto p-0 me-1 slider-btn prev-btn"
+                style="width: 30px; height: 30px; border-radius: 50%;">
+                <i class="fa-solid fa-sm fa-less-than "></i>
+            </button>
+
+            <button class="btn p-0 rounded-circle slider-btn next-btn" style="width: 30px; height: 30px;">
+                <i class="fa-solid fa-sm fa-greater-than "></i>
+            </button>
+        </div>
+
+
+        <div id="fashion-slider" class="owl-carousel product-slider-2 owl-theme d-block">
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item1.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Gadget Zone</p>
+                        <a href="#">Multicolored Open-Knit Crewneck</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$79.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item2.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Pro Tech Gear</p>
+                        <a href="#">Croppped Satin Bomber Jacket</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$94.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item3.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Soylent Green</p>
+                        <a href="#">Mens Cotton Casual Short Sleeve T-Shirts</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$86.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item4.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Gadget Zone</p>
+                        <a href="#">Multicolored Open-Knit Crewneck</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$70.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item5.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Looney Tunes</p>
+                        <a href="#">Michels Kors Jet Set Tote Bag</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$82.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item6.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Soylent Green</p>
+                        <a href="#">Nike Air Max Invigor 'Black' 749680</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$52.44</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item7.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>The Simpsons</p>
+                        <a href="#">Smart Speaker & Google Assistant, Light Grey</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$54.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item8.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Initech Space</p>
+                        <a href="#">Apple Smart Watch/ Midnight Aluminum</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$61.67</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="electronic-slider" class="owl-carousel product-slider-2 owl-theme  d-none">
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item6.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Soylent Green</p>
+                        <a href="#">Nike Air Max Invigor 'Black' 749680</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$52.44</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item2.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Pro Tech Gear</p>
+                        <a href="#">Croppped Satin Bomber Jacket</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$94.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item5.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Looney Tunes</p>
+                        <a href="#">Michels Kors Jet Set Tote Bag</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$82.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item3.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Soylent Green</p>
+                        <a href="#">Mens Cotton Casual Short Sleeve T-Shirts</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$86.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item4.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Gadget Zone</p>
+                        <a href="#">Multicolored Open-Knit Crewneck</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$70.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="product-slider-2-item8.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Initech Space</p>
+                        <a href="#">Apple Smart Watch/ Midnight Aluminum</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$61.67</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item1.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Gadget Zone</p>
+                        <a href="#">Multicolored Open-Knit Crewneck</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$79.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item7.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>The Simpsons</p>
+                        <a href="#">Smart Speaker & Google Assistant, Light Grey</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$54.00</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div id="furniture-slider" class="owl-carousel product-slider-2 owl-theme  d-none">
+
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <img src="img&icon/product-slider-2-item3.jpg" class="img-fluid" alt="">
+                    <div style="padding: 5px 10px;">
+                        <p>Soylent Green</p>
+                        <a href="#">Mens Cotton Casual Short Sleeve T-Shirts</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$86.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <img src="img&icon/product-slider-2-item2.jpg" class="img-fluid" alt="">
+                    <div style="padding: 5px 10px;">
+                        <p>Pro Tech Gear</p>
+                        <a href="#">Croppped Satin Bomber Jacket</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$94.00</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <img src="img&icon/product-slider-2-item4.jpg" class="img-fluid" alt="">
+                    <div style="padding: 5px 10px;">
+                        <p>Gadget Zone</p>
+                        <a href="#">Multicolored Open-Knit Crewneck</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$70.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <img src="img&icon/product-slider-2-item7.jpg" class="img-fluid" alt="">
+                    <div style="padding: 5px 10px;">
+                        <p>The Simpsons</p>
+                        <a href="#">Smart Speaker & Google Assistant, Light Grey</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$54.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <img src="img&icon/product-slider-2-item5.jpg" class="img-fluid" alt="">
+                    <div style="padding: 5px 10px;">
+                        <p>Looney Tunes</p>
+                        <a href="#">Michels Kors Jet Set Tote Bag</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$82.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <img src="img&icon/product-slider-2-item8.jpg" class="img-fluid" alt="">
+                    <div style="padding: 5px 10px;">
+                        <p>Initech Space</p>
+                        <a href="#">Apple Smart Watch/ Midnight Aluminum</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$61.67</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <img src="img&icon/product-slider-2-item6.jpg" class="img-fluid" alt="">
+                    <div style="padding: 5px 10px;">
+                        <p>Soylent Green</p>
+                        <a href="#">Nike Air Max Invigor 'Black' 749680</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$52.44</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <img src="img&icon/product-slider-2-item1.jpg" class="img-fluid" alt="">
+                    <div style="padding: 5px 10px;">
+                        <p>Gadget Zone</p>
+                        <a href="#">Multicolored Open-Knit Crewneck</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$79.00</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- offer Banner -->
+    <div class="container-fluid offset-banner container-lg position-relative roboto-font">
+        <div style="overflow: hidden;">
+            <img src="img&icon/offer-banner.jpg" class="img-fluid" alt="">
+
+        </div>
+        <div class=" offset-banner-text-wall">
+            <div class=" offset-banner-text ">
+                <div class="text1">WATCH</div>
+                <div class="text2">
+                    M6 Smart Band 2.3 - Fitness Band <br> Men's and Women's Health Tracking, Red Strap.
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- latest product slider-->
+    <div class="container-fluid container-lg product">
+        <!-- slider navbar -->
+        <div class="d-flex slider-navbar roboto-font">
+            <p class="product-title">Latest Product</p>
+            <button class="btn ms-auto p-0 me-1 slider-btn latest-prev-btn"
+                style="width: 30px; height: 30px; border-radius: 50%;">
+                <i class="fa-solid fa-sm fa-less-than "></i>
+            </button>
+
+            <button class="btn p-0 rounded-circle slider-btn latest-next-btn" style="width: 30px; height: 30px;">
+                <i class="fa-solid fa-sm fa-greater-than "></i>
+            </button>
+        </div>
+
+        <div class="owl-carousel product-slider-3 owl-theme d-block">
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item1.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Gadget Zone</p>
+                        <a href="#">Multicolored Open-Knit Crewneck</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$79.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+
+                        <img src="img&icon/product-slider-2-item2.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Pro Tech Gear</p>
+                        <a href="#">Croppped Satin Bomber Jacket</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$94.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item3.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Soylent Green</p>
+                        <a href="#">Mens Cotton Casual Short Sleeve T-Shirts</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$86.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item4.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Gadget Zone</p>
+                        <a href="#">Multicolored Open-Knit Crewneck</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$70.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item5.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Looney Tunes</p>
+                        <a href="#">Michels Kors Jet Set Tote Bag</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$82.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item6.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Soylent Green</p>
+                        <a href="#">Nike Air Max Invigor 'Black' 749680</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$52.44</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item7.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>The Simpsons</p>
+                        <a href="#">Smart Speaker & Google Assistant, Light Grey</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$54.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item8.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Initech Space</p>
+                        <a href="#">Apple Smart Watch/ Midnight Aluminum</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$61.67</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- cmsBanner2 -->
+    <div class="container-fluid cms-banner-2 container-lg roboto-font">
+        <div class="row g-4">
+
+            <div class="col-md-6 cms-banner-2-wall">
+                <div class="overflow-hidden">
+                    <img src="img&icon/cms-banner-4.jpg" class="img-fluid rounded-3" alt="">
+                </div>
+                <div class="cms-banner-2-text row">
+                    <div class="col-6 col-md-7 p-0 m-o">
+                        <div class=" cmsBT-content " style="left: 0;">
+                            <div class="text1"> Save Up To 20% Off </div>
+                            <div class="text2"> Santa Lucia Three Seater Sofa </div>
+                            <div>
+                                <button class="btn text-white">SHOP NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="col-md-6 cms-banner-2-wall">
+                <div class="overflow-hidden">
+                    <img src="img&icon/cms-banner-5.jpg" class="img-fluid rounded-3" alt="">
+                </div>
+                <div class="cms-banner-2-text row">
+                    <div class="col-6 col-md-7 p-0 m-o">
+                        <div class=" cmsBT-content " style="left: 0;">
+                            <div class="text1"> Best Online Discount </div>
+                            <div class="text2">Woman In Red Crew Neck T-Shirt </div>
+                            <div>
+                                <button class="btn text-white">SHOP NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Featured Products -->
+    <div class="container-fluid container-lg product">
+        <!-- slider navbar -->
+        <div class="d-flex slider-navbar roboto-font">
+            <p class="product-title">Featured Products</p>
+            <button class="btn ms-auto p-0 me-1 slider-btn featured-prev-btn"
+                style="width: 30px; height: 30px; border-radius: 50%;">
+                <i class="fa-solid fa-sm fa-less-than "></i>
+            </button>
+
+            <button class="btn p-0 rounded-circle slider-btn featured-next-btn" style="width: 30px; height: 30px;">
+                <i class="fa-solid fa-sm fa-greater-than "></i>
+            </button>
+        </div>
+
+        <div class="owl-carousel product-slider-4 owl-theme ">
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item1.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Gadget Zone</p>
+                        <a href="#">Multicolored Open-Knit Crewneck</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$79.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+
+                        <img src="img&icon/product-slider-2-item2.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Pro Tech Gear</p>
+                        <a href="#">Croppped Satin Bomber Jacket</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$94.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item3.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Soylent Green</p>
+                        <a href="#">Mens Cotton Casual Short Sleeve T-Shirts</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$86.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item4.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Gadget Zone</p>
+                        <a href="#">Multicolored Open-Knit Crewneck</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$70.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item5.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Looney Tunes</p>
+                        <a href="#">Michels Kors Jet Set Tote Bag</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$82.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <img src="img&icon/product-slider-2-item6.jpg" class="img-fluid" alt="">
+                    <div style="padding: 5px 10px;">
+                        <p>Soylent Green</p>
+                        <a href="#">Nike Air Max Invigor 'Black' 749680</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$52.44</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="img&icon/product-img">
+                        <img src="product-slider-2-item7.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>The Simpsons</p>
+                        <a href="#">Smart Speaker & Google Assistant, Light Grey</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$54.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item8.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Initech Space</p>
+                        <a href="#">Apple Smart Watch/ Midnight Aluminum</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$61.67</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Deal products -->
+    <div class="container-fluid container-lg product">
+        <!-- slider navbar -->
+        <div class="d-flex slider-navbar roboto-font">
+            <p class="product-title">Deal Of The Day</p>
+            <button class="btn ms-auto p-0 me-1 slider-btn deal-prev-btn"
+                style="width: 30px; height: 30px; border-radius: 50%;">
+                <i class="fa-solid fa-sm fa-less-than "></i>
+            </button>
+
+            <button class="btn p-0 rounded-circle slider-btn deal-next-btn" style="width: 30px; height: 30px;">
+                <i class="fa-solid fa-sm fa-greater-than "></i>
+            </button>
+        </div>
+
+        <!-- Slider -->
+        <div class="owl-carousel product-slider-5 owl-theme ">
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item1.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Gadget Zone</p>
+                        <a href="#">Multicolored Open-Knit Crewneck</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$79.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+
+                        <img src="img&icon/product-slider-2-item2.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Pro Tech Gear</p>
+                        <a href="#">Croppped Satin Bomber Jacket</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$94.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item3.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Soylent Green</p>
+                        <a href="#">Mens Cotton Casual Short Sleeve T-Shirts</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$86.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item4.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Gadget Zone</p>
+                        <a href="#">Multicolored Open-Knit Crewneck</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$70.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item5.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Looney Tunes</p>
+                        <a href="#">Michels Kors Jet Set Tote Bag</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$82.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <img src="img&icon/product-slider-2-item6.jpg" class="img-fluid" alt="">
+                    <div style="padding: 5px 10px;">
+                        <p>Soylent Green</p>
+                        <a href="#">Nike Air Max Invigor 'Black' 749680</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$52.44</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item7.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>The Simpsons</p>
+                        <a href="#">Smart Speaker & Google Assistant, Light Grey</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$54.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item h-100">
+                <div class="h-100 d-flex flex-column border bg-white" style="padding: 10px;">
+                    <div class="product-img">
+                        <img src="img&icon/product-slider-2-item8.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <div style="padding: 5px 10px;">
+                        <p>Initech Space</p>
+                        <a href="#">Apple Smart Watch/ Midnight Aluminum</a>
+                        <div style="margin-top: 5px;margin-bottom: 12px;">
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-sm fa-star-half-stroke" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                            <i class="fa-solid fa-sm fa-star" style="color: #cfcbcb;"></i>
+                        </div>
+                        <span>$61.67</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- cmsBanner3 -->
+    <div class="container-fluid cms-banner-2 container-lg roboto-font">
+        <div class="row g-4">
+
+            <div class="col-md-6 cms-banner-2-wall">
+                <div class="overflow-hidden">
+                    <img src="img&icon/cms-banner-6.jpg" class="img-fluid rounded-3" alt="">
+                </div>
+                <div class="cms-banner-2-text row">
+                    <div class="col-6 col-md-7 p-0 m-o">
+                        <div class=" cmsBT-content " style="left: 0;">
+                            <div class="text1"> 20 Days Return Products </div>
+                            <div class="text2"> Mobile Shope-Smart Watch T-55 </div>
+                            <div>
+                                <button class="btn text-white">SHOP NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 cms-banner-2-wall">
+                <div class="overflow-hidden">
+                    <img src="img&icon/cms-banner-7.jpg" class="img-fluid rounded-3" alt="">
+                </div>
+                <div class="cms-banner-2-text row">
+                    <div class="col-6 col-md-7 p-0 m-o">
+                        <div class=" cmsBT-content " style="left: 0;">
+                            <div class="text1"> Save Up To 30% Off </div>
+                            <div class="text2"> Decoration Design Lamp Light </div>
+                            <div>
+                                <button class="btn text-white">SHOP NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- logo slider -->
+    <div class="container-fluid container-lg logo-slider-menu">
+        <div class="logo-slider-wall">
+
+            <div class="owl-carousel logo-slider owl-theme d-block">
+                <div class="item ">
+                    <div class="logo-slider-img">
+                        <img src="img&icon/icon1.jpg" class="img-fluid" alt="Looney Toones">
+                    </div>
+                </div>
+
+                <div class="item ">
+                    <div class="logo-slider-img">
+                        <img src="img&icon/icon2.jpg" class="img-fluid" alt="Looney Toones">
+                    </div>
+                </div>
+
+                <div class="item ">
+                    <div class="logo-slider-img">
+                        <img src="img&icon/icon3.jpg" class="img-fluid" alt="Looney Toones">
+                    </div>
+                </div>
+
+                <div class="item ">
+                    <div class="logo-slider-img">
+                        <img src="img&icon/icon4.jpg" class="img-fluid" alt="Looney Toones">
+                    </div>
+                </div>
+
+                <div class="item ">
+                    <div class="logo-slider-img">
+                        <img src="img&icon/icon5.jpg" class="img-fluid" alt="Looney Toones">
+                    </div>
+                </div>
+
+                <div class="item ">
+                    <div class="logo-slider-img">
+                        <img src="img&icon/icon6.jpg" class="img-fluid" alt="Looney Toones">
+                    </div>
+                </div>
+                <div class="item ">
+                    <div class="logo-slider-img">
+                        <img src="img&icon/icon1.jpg" class="img-fluid" alt="Looney Toones">
+                    </div>
+                </div>
+                <div class="item ">
+                    <div class="logo-slider-img">
+                        <img src="img&icon/icon2.jpg" class="img-fluid" alt="Looney Toones">
+                    </div>
+                </div>
+                <div class="item ">
+                    <div class="logo-slider-img">
+                        <img src="img&icon/icon3.jpg" class="img-fluid" alt="Looney Toones">
+                    </div>
+                </div>
+                <div class="item ">
+                    <div class="logo-slider-img">
+                        <img src="img&icon/icon4.jpg" class="img-fluid" alt="Looney Toones">
+                    </div>
+                </div>
+
+
+            </div>
+            <button class="btn logo-prev-btn slider-btn translate-middle">
+                <i class="fa-solid fa-sm fa-less-than "></i>
+            </button>
+
+            <button class="btn logo-next-btn slider-btn translate-middle">
+                <i class="fa-solid fa-sm fa-greater-than "></i>
+            </button>
+
+        </div>
+    </div>
+
+
+
+    <!-- Client testimonials -->
+    <div class="container-fluid container-lg client-testimonials roboto-font">
+        <div class="d-flex slider-navbar roboto-font">
+            <p class="product-title">What Our Client Say</p>
+            <button class="btn ms-auto p-0 me-1 slider-btn client-testimonials-prev-btn"
+                style="width: 30px; height: 30px; border-radius: 50%;">
+                <i class="fa-solid fa-sm fa-less-than "></i>
+            </button>
+
+            <button class="btn p-0 rounded-circle slider-btn client-testimonials-next-btn"
+                style="width: 30px; height: 30px;">
+                <i class="fa-solid fa-sm fa-greater-than "></i>
+            </button>
+        </div>
+
+        <div class="owl-carousel client-testimonials-slider owl-theme">
+
+            <div class="item">
+                <div class="d-flex  mb-3 ">
+                    <img src="img&icon/user1.jpg" style="height: 73px; width: 73px;border-radius: 50%;" alt="">
+                    <div class="d-flex flex-column ms-3 justify-content-center">
+                        <a href="#">Patric Goodman</a>
+                        <p class="m-0">Manager</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="m-0">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has
+                        been
+                        the
+                        industrys standard dummy text randomised words which dont look even slightly believable
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="d-flex mb-3">
+                    <img src="img&icon/user2.jpg" style="height: 73px; width: 73px;border-radius: 50%;" alt="">
+                    <div class="d-flex flex-column ms-3 justify-content-center">
+                        <a href="#">Luies Charls</a>
+                        <p class="m-0">Helper</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="m-0">
+                        Galley of type and scrambled it to make a type specimen book Lorem Ipsum is simply dummy text of
+                        the printing and typesetting t predefined chunks as necessary, making this the first true
+                        generator </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="d-flex mb-3">
+                    <img src="img&icon/user3.jpg" style="height: 73px; width: 73px;border-radius: 50%;" alt="">
+                    <div class="d-flex flex-column ms-3 justify-content-center">
+                        <a href="#">Jecob Goeckno</a>
+                        <p class="m-0">Unit Manager</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="m-0">
+                        Letraset sheets containing Lorem with desktop publishing printer took a galley Lorem Ipsum is
+                        simply dummy text of the printing model sentence structures, to generate Lorem Ipsum which looks
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="d-flex mb-3">
+                    <img src="img&icon/user4.jpg" style="height: 73px; width: 73px;border-radius: 50%;" alt="">
+                    <div class="d-flex flex-column ms-3 justify-content-center">
+                        <a href="#">Mr. Danial Smith</a>
+                        <p class="m-0">Sales Person</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="m-0">
+                        Publishing printer took a galley Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry Lorem Ipsum has been and a search for lorem ipsum will uncover many web
+                        sites still </p>
+                </div>
+            </div>
+            <div class="item ">
+                <div class="d-flex  mb-3 ">
+                    <img src="img&icon/user1.jpg" style="height: 73px; width: 73px;border-radius: 50%;" alt="">
+                    <div class="d-flex flex-column ms-3 justify-content-center">
+                        <a href="#">Patric Goodman</a>
+                        <p class="m-0">Manager</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="m-0">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has
+                        been
+                        the
+                        industrys standard dummy text randomised words which dont look even slightly believable
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="d-flex mb-3">
+                    <img src="img&icon/user2.jpg" style="height: 73px; width: 73px;border-radius: 50%;" alt="">
+                    <div class="d-flex flex-column ms-3 justify-content-center">
+                        <a href="#">Luies Charls</a>
+                        <p class="m-0">Helper</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="m-0">
+                        Galley of type and scrambled it to make a type specimen book Lorem Ipsum is simply dummy text of
+                        the printing and typesetting t predefined chunks as necessary, making this the first true
+                        generator </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- blog slider -->
+    <div class="container-fluid container-lg blog roboto-font">
+        <div class="d-flex slider-navbar roboto-font">
+            <p class="product-title">From The Blog</p>
+            <button class="btn ms-auto p-0 me-1 slider-btn blog-prev-btn"
+                style="width: 30px; height: 30px; border-radius: 50%;">
+                <i class="fa-solid fa-sm fa-less-than "></i>
+            </button>
+
+            <button class="btn p-0 rounded-circle slider-btn blog-next-btn" style="width: 30px; height: 30px;">
+                <i class="fa-solid fa-sm fa-greater-than "></i>
+            </button>
+        </div>
+
+        <div class="owl-carousel blog-slider owl-theme">
+
+            <div class="item">
+                <div class="overflow-hidden">
+                    <img src="img&icon/b-blog-7.jpg" class="rounded-2" alt="">
+                </div>
+                <div class="blog-content">
+                    <span>5 APRIL, 2023</span><br>
+                    <div> <a href="#">Nullam ullamcorper ornare molestie</a></div>
+                    <p>Suspendisse posure, diam in bibendum loborits, turpis ipsum aliquem...</p>
+                    <a href="#">READ MORE</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="overflow-hidden">
+                    <img src="img&icon/b-blog-6.jpg" class="rounded-2" alt="">
+                </div>
+                <div class="blog-content">
+                    <span>3 APRIL, 2023</span><br>
+                    <div> <a href="#">Turpis at eleifend Aenean porta</a></div>
+                    <p>
+                        Turpis at eleifend ps mi elit Aenean porta ac sed faucibus. Nunc urna...
+                    </p>
+                    <a href="#">READ MORE</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="overflow-hidden">
+                    <img src="img&icon/b-blog-5.jpg" class="rounded-2" alt="">
+                </div>
+                <div class="blog-content">
+                    <span>3 APRIL, 2023</span><br>
+                    <div> <a href="#">Morbi condimentum molestie Nam</a></div>
+                    <p>
+                        Sed mauris Pellentesque elit Aliquam at lacus interdum nascetur elit...
+                    </p>
+                    <a href="#">READ MORE</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="overflow-hidden">
+                    <img src="img&icon/b-blog-4.jpg" class="rounded-2" alt="">
+                </div>
+                <div class="blog-content">
+                    <span>3 APRIL, 2023</span><br>
+                    <div> <a href="#">Curabitur at elit Vestibulum</a></div>
+                    <p>
+                        Mi vitae magnis Fusce laoreet nibh felis porttitor laoreet Vestibulum...
+                    </p>
+                    <a href="#">READ MORE</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="overflow-hidden">
+                    <img src="img&icon/b-blog-3.jpg" class="rounded-2" alt="">
+                </div>
+                <div class="blog-content">
+                    <span>3 APRIL, 2023</span><br>
+                    <div> <a href="#">Urna pretium elit mauris cursus</a></div>
+                    <p>
+                        Mi vitae magnis Fusce laoreet nibh felis porttitor laoreet Vestibulum...
+                    </p>
+                    <a href="#">READ MORE</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="overflow-hidden">
+                    <img src="img&icon/b-blog-7.jpg" class="rounded-2" alt="">
+                </div>
+                <div class="blog-content">
+                    <span>5 APRIL, 2023</span><br>
+                    <div> <a href="#">Nullam ullamcorper ornare molestie</a></div>
+                    <p>Suspendisse posure, diam in bibendum loborits, turpis ipsum aliquem...</p>
+                    <a href="#">READ MORE</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="overflow-hidden">
+                    <img src="img&icon/b-blog-6.jpg" class="rounded-2" alt="">
+                </div>
+                <div class="blog-content">
+                    <span>3 APRIL, 2023</span><br>
+                    <div> <a href="#">Turpis at eleifend Aenean porta</a></div>
+                    <p>
+                        Turpis at eleifend ps mi elit Aenean porta ac sed faucibus. Nunc urna...
+                    </p>
+                    <a href="#">READ MORE</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- instagram image -->
+    <div class="instagram-img-background">
+        <div class="container-fluid container-lg instagram-img roboto-font">
+            <p class="instagram-img-title">Follow Us On Instagram</p>
+            <div class="owl-carousel instagram-img-slider owl-theme">
+                <div class="item">
+                    <img src="img&icon/instagram-1.jpg" class="rounded-3" alt="">
+                    <div class="instagram-img-hover">
+                        <img src="img&icon/instagram-icon.svg" class="img-fluid translate-middle"
+                            style="width: 35px; height: 35px;" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img&icon/instagram-2.jpg" class="rounded-3" alt="">
+                    <div class="instagram-img-hover">
+                        <img src="img&icon/instagram-icon.svg" class="img-fluid translate-middle"
+                            style="width: 35px; height: 35px;" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img&icon/instagram-3.jpg" class="rounded-3" alt="">
+                    <div class="instagram-img-hover">
+                        <img src="img&icon/instagram-icon.svg" class="img-fluid translate-middle"
+                            style="width: 35px; height: 35px;" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img&icon/instagram-4.jpg" class="rounded-3" alt="">
+                    <div class="instagram-img-hover">
+                        <img src="img&icon/instagram-icon.svg" class="img-fluid translate-middle"
+                            style="width: 35px; height: 35px;" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img&icon/instagram-5.jpg" class="rounded-3" alt="">
+                    <div class="instagram-img-hover">
+                        <img src="img&icon/instagram-icon.svg" class="img-fluid translate-middle"
+                            style="width: 35px; height: 35px;" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img&icon/instagram-6.jpg" class="rounded-3" alt="">
+                    <div class="instagram-img-hover">
+                        <img src="img&icon/instagram-icon.svg" class="img-fluid translate-middle"
+                            style="width: 35px; height: 35px;" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img&icon/instagram-8.jpg" class="rounded-3" alt="">
+                    <div class="instagram-img-hover">
+                        <img src="img&icon/instagram-icon.svg" class="img-fluid translate-middle"
+                            style="width: 35px; height: 35px;" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img&icon/instagram-9.jpg" class="rounded-3" alt="">
+                    <div class="instagram-img-hover">
+                        <img src="img&icon/instagram-icon.svg" class="img-fluid translate-middle"
+                            style="width: 35px; height: 35px;" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img&icon/instagram-1.jpg" class="rounded-3" alt="">
+                    <div class="instagram-img-hover">
+                        <img src="img&icon/instagram-icon.svg" class="img-fluid translate-middle"
+                            style="width: 35px; height: 35px;" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img&icon/instagram-3.jpg" class="rounded-3" alt="">
+                    <div class="instagram-img-hover">
+                        <img src="img&icon/instagram-icon.svg" class="img-fluid translate-middle"
+                            style="width: 35px; height: 35px;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Hizmetler -->
+    <div class="container-fluid  container-lg services roboto-font ">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5">
+
+            <div class=" services-item text-center">
+                <img src="img&icon/car.svg" class="img-fluid services-icon" width="60px" height="50px" alt="">
+                <p>Free Shipping</p>
+                <p>For all Orders Over $100</p>
+            </div>
+            <div class="services-item text-center">
+                <img src="img&icon/services-icon2.svg" class="img-fluid services-icon " width="60px" height="50px"
+                    alt="">
+
+                <p>Free Shipping</p>
+                <p>For all Orders Over $100</p>
+            </div>
+            <div class="services-item text-center">
+                <img src="img&icon/services-icon3.svg" class="img-fluid services-icon" width="50px" height="50px"
+                    alt="">
+                <p>Free Shipping</p>
+                <p>For all Orders Over $100</p>
+            </div>
+            <div class="services-item text-center">
+                <img src="img&icon/services-icon4.svg" class="img-fluid services-icon" width="60px" height="50px"
+                    alt="">
+                <p>Free Shipping</p>
+                <p>For all Orders Over $100</p>
+            </div>
+            <div class="services-item text-center">
+                <img src="img&icon/services-icon5.svg" class="img-fluid services-icon" width="60px" height="50px"
+                    alt="">
+                <p>Free Shipping</p>
+                <p>For all Orders Over $100</p>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+
+    <div class="footer footer-row container-lg roboto-font">
+        <div class="row ">
+
+            <!-- Contact Us -->
+            <div class="col-lg-4 contactUs">
+                <p class="footer-title">Contact Us</p>
+                <p class="footer-desc">Classyshop - Mega Super Store <br> 507-Union Trade Center <br>France </p>
+                <a href="#" class="cu-email ">Sales@yourcompany.com</a>
+                <br>
+                <span class="cu-tel">(+90)534-434-04-61</span>
+                <div class="d-flex align-items-center">
+                    <img src="img&icon/footer-img.svg" class="img-fluid " width="45px" height="45px">
+                    <p class="cu-msg ">Online Chat <br>Get Expert Help </p>
+                </div>
+            </div>
+
+            <!-- Products -->
+            <div class="col-lg-2 footer-product">
+                <p class="footer-title">Products</p>
+                <ul class="fp-list">
+                    <li><a href="#">Prices Drop</a></li>
+                    <li><a href="#">New Products</a></li>
+                    <li><a href="#">Best Sales</a></li>
+                    <li><a href="#">contact Us</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Stores</a></li>
+                </ul>
+            </div>
+
+            <!-- Company -->
+            <div class="col-lg-3 company">
+                <p class="footer-title">Our Company</p>
+                <ul class="fp-list">
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">Legal Notice</a></li>
+                    <li><a href="#">Terms And Conditions Of Use</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Secure Payment</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+
+            <!-- Subscribe -->
+            <div class="col-lg-3 subscribe">
+                <p class="footer-title">Subscribe To Newsletter</p>
+                <p class="subscribe-desc">Subscribe to our latest newslatter to get news about specials descounts.</p>
+                <input type="email" class="form-control" style="margin-bottom: 10px;" placeholder="Your Email Address">
+                <button class="btn text-white">Subscribe</button>
+                <p style="margin-top: 15px;">
+                    <input type="checkbox">
+                    I agree to the terms and conditions and the privacy policy
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer 2 -->
+    <div class="footer footer-accordion container-fluid roboto-font">
+
+        <!-- Contact Us -->
+        <div class="fa-wall">
+            <div class="fa-item">
+                <p class="d-inline ">Contact Us</p>
+                <i class="float-end fa-solid fa-angle-left fa-rotate-90"></i>
+            </div>
+            <div class="fa-accordion">
+
+                <p class="fa-desc">Classyshop - Mega Super Store <br> 507-Union Trade Center <br>France </p>
+                <a href="#" class="fa-email ">Sales@yourcompany.com</a>
+                <br>
+                <span class="fa-tel">(+90)534-434-04-61</span>
+                <div class="d-flex align-items-center">
+                    <img src="img&icon/footer-img.svg" class="img-fluid " width="45px" height="45px">
+                    <p class="fa-msg ">Online Chat <br>Get Expert Help </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Products -->
+        <div class="fa-wall">
+            <div class="fa-item">
+                <p class="d-inline ">Products</p>
+                <i class="float-end fa-solid fa-angle-left fa-rotate-90"></i>
+            </div>
+            <div class="fa-accordion">
+                <ul class="fp-list">
+                    <li><a href="#">Prices Drop</a></li>
+                    <li><a href="#">New Products</a></li>
+                    <li><a href="#">Best Sales</a></li>
+                    <li><a href="#">contact Us</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Stores</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Company -->
+        <div class="fa-wall">
+            <div class="fa-item">
+                <p class="d-inline fa-title">Our Company</p>
+                <i class="float-end fa-solid fa-angle-left fa-rotate-90"></i>
+            </div>
+            <div class="fa-accordion">
+
+                <ul class="fp-list">
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">Legal Notice</a></li>
+                    <li><a href="#">Terms And Conditions Of Use</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Secure Payment</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- Subscribe -->
+        <div class="fa-wall">
+            <p class="footer-title" style="margin-bottom: 10px;">Subscribe To Newsletter</p>
+            <p class="fa-subscribe-desc">Subscribe to our latest newslatter to get news about specials descounts.</p>
+            <input type="email" class="form-control" style="margin-bottom: 10px;" placeholder="Your Email Address">
+            <button class="btn text-white">Subscribe</button>
+            <p style="margin-top: 15px;" class="fa-prv-plc">
+                <input type="checkbox">
+                I agree to the terms and conditions and the privacy policy
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="container-fluid  container-lg roboto-font ">
+        <div class="d-flex flex-column flex-xl-row justify-content-between align-items-center">
+
+
+            <div class="social-media-link order-xl-1">
+                <div class="d-flex justify-content-center gap-2 mt-4">
+                    <div class="social-media-icons">
+                        <i class="fa-brands fa-xl fa-facebook-f"></i>
+                    </div>
+                    <div class="social-media-icons">
+                        <i class="fa-brands fa-xl fa-twitter"></i>
+                    </div>
+                    <div class="social-media-icons">
+                        <i class="fa-brands fa-xl fa-youtube"></i>
+                    </div>
+                    <div class="social-media-icons">
+                        <i class="fa-brands fa-xl fa-pinterest-p"></i>
+                    </div>
+                    <div class="social-media-icons">
+                        <i class="fa-brands fa-xl fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" order-xl-3">
+                <div>
+                    <div class="d-flex justify-content-center gap-2 mt-3">
+                        <img src="img&icon/carte_bleue.png" class="img-fluid" alt="">
+                        <img src="img&icon/visa.png" class="img-fluid" alt="">
+                        <img src="img&icon/master_card.png" class="img-fluid" alt="">
+                        <img src="img&icon/american_express.png" class="img-fluid" alt="">
+                        <img src="img&icon/paypal.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="order-xl-2">
+                <div class="d-flex justify-content-center mt-3">
+                    <a href="#">
+                        © 2024 - Ecommerce software by PrestaShop™
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-mje6L6hCyO5iNpD+wPSnUq8okGhoTYQFxhO8Arhjs9X33JH5TBOSYhxdA4Qp+cxDvB2rHLERl+I8Xodm7mqfMA=="
+        crossorigin="anonymous" />
+
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-AUTN2rrBl7CfcIE6h5zTcmSB1i/dSZclPIHXLAGvH0CdZ3ZorBypgKDQaVFS0DzTdZ7J/Ka7pV8eb/w+08X0jQ=="
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+
+        $(document).ready(function () {
+
+
+
+            $(".fa-item:not(:last-child)").click(function (event) {
+
+                $(event.target).next().animate({
+                    display: "inline-block",
+                    height: "toggle"
+                })
+            })
+
+
+            $(".slider-btn").on({
+
+                mouseover: function () {
+
+                    $(this).css({
+                        "background-color": anaRenk,
+                        "color": "white"
+                    });
+
+
+                },
+                mouseout: function () {
+                    $(this).css({
+                        "background-color": "white",
+                        "color": "black"
+                    });
+                }
+            })
+
+
+
+
+            $('.instagram-img-slider').owlCarousel({
+                loop: false,
+                margin: 18,
+                nav: false,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 2
+                    },
+                    520: {
+                        items: 3
+                    },
+                    768: {
+                        items: 4
+                    },
+                    992: {
+                        items: 5
+                    },
+                    1200: {
+                        items: 6
+                    }
+                }
+            })
+
+
+            $('.client-testimonials-slider').owlCarousel({
+                loop: false,
+                margin: 24,
+                nav: false,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    1200: {
+                        items: 3
+                    }
+                }
+            })
+
+            $('.blog-slider').owlCarousel({
+                loop: false,
+                margin: 24,
+                nav: false,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    992: {
+                        items: 3
+                    },
+                    1470: {
+                        items: 4
+                    }
+                }
+            })
+
+            $(".customizer-icon").click(function () {
+
+                var $right = $(".theme-customizer").css("right");
+
+                if ($right === "0px") {
+                    $(".theme-customizer").animate({ right: "-300px" });
+                }
+                else { $(".theme-customizer").animate({ right: "0px" }); }
+            })
+
+
+
+            var anaRenk = "rgb(255, 82, 82)";
+
+            $(".color-box").click(function () {
+
+                var hedefRenk = $(this).css("background-color");
+                anaRenk = hedefRenk;
+                var orjinalRenk = $(".navbar-icon span").css("background-color");
+
+
+                $("*:not(.color-box,.slider-btn)").each(function () {
+                    if ($(this).css("color") === orjinalRenk) {
+                        $(this).css("color", hedefRenk);
+                        $(".promotion-banner").css("border-color", hedefRenk);
+                        $(".product-slider-5").css("border-color", hedefRenk);
+                    }
+
+                    if ($(this).css("background-color") === orjinalRenk) {
+                        $(this).css("background-color", hedefRenk);
+                    }
+
+                })
+            })
+
+
+            $("#primary-color").on("input", function () {
+
+
+                var hedefRenk = $(this).val();
+                anaRenk = hedefRenk;
+                var orjinalRenk = $(".navbar-icon span").css("background-color");
+                var bodyBackground = $(".customizer-icon").css("background-color");
+
+
+                $("*:not(.color-box,.slider-btn)").each(function () {
+                    if ($(this).css("color") === orjinalRenk) {
+                        $(this).css("color", hedefRenk);
+                        $(".promotion-banner").css("border-color", hedefRenk);
+                        $(".product-slider-5").css("border-color", hedefRenk);
+                    }
+
+                    if ($(this).css("background-color") === orjinalRenk && orjinalRenk != bodyBackground) {
+                        $(this).css("background-color", hedefRenk);
+                    }
+
+                })
+
+
+
+            })
+
+            $(".btn:not(.slider-btn)").on({
+
+                mouseenter: function () {
+                    color = $(this).css("background-color");
+                    $(this).css("background-color", "black");
+                },
+                mouseout: function () {
+                    $(this).css("background-color", color);
+                }
+            })
+
+
+            $("a").hover(function () {
+                $(this).css("color", anaRenk);
+            }, function () {
+                $("a").css("color", "black");
+            })
+
+            $(".navbar-icon").find("span").css("background-color", anaRenk)
+            $(".services-icon").find("img").css("fill", anaRenk)
+            $("span:not(.navbar-icon span,.theme-customizer span)").css("color", anaRenk)
+            $(".promotion-banner").css({
+                "border-width": "2px",
+                "border-color": anaRenk,
+                "border-style": "solid",
+                "border-radius": "6px"
+            })
+            $(".product-slider-5").css({
+                "border-width": "2px",
+                "border-color": anaRenk,
+                "border-style": "solid",
+                "border-radius": "4px"
+            })
+
+
+
+            $(".social-media-icons").on({
+
+                mouseover: function () {
+
+                    $(this).css({
+                        "background-color": anaRenk,
+                        "color": "white"
+                    });
+
+
+                },
+                mouseout: function () {
+                    $(this).css({
+                        "background-color": "white",
+                        "color": "black"
+                    });
+                }
+            })
+
+
+            $('.product-slider-2,.product-slider-3,.product-slider-4,.product-slider-5').owlCarousel({
+                loop: false,
+                margin: 0,
+                nav: false,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 2
+                    },
+                    576: {
+                        items: 3
+                    },
+                    768: {
+                        items: 4
+                    },
+                    1200: {
+                        items: 5
+                    },
+                    1460: {
+                        items: 6
+                    }
+                }
+            })
+
+
+
+            $('.product-slider').owlCarousel({
+                loop: false,
+                margin: 24,
+                nav: false,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 3
+                    },
+                    615: {
+                        items: 4
+                    },
+                    800: {
+                        items: 5
+                    },
+                    1200: {
+                        items: 6
+                    },
+                    1400: {
+                        items: 7
+                    }
+                }
+            })
+
+
+            $('.logo-slider').owlCarousel({
+                loop: false,
+                margin: 0,
+                nav: false,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 2
+                    },
+                    576: {
+                        items: 3
+                    },
+                    768: {
+                        items: 4
+                    },
+                    1200: {
+                        items: 5
+                    },
+                    1460: {
+                        items: 6
+                    }
+                }
+            })
+
+
+            var slider = $(".slider-1");
+            $(".slider-prev-btn").click(function () {
+                slider.trigger("prev.owl.carousel");
+            })
+            $(".slider-next-btn").click(function () {
+                slider.trigger("next.owl.carousel");
+            })
+            $(".product-slider-text").click(function () {
+                var link = $(this).find("a").attr("href");
+                window.location.href = link;
+            })
+            $(".slider-navbar .prev-btn").click(function () {
+                $(".product-slider-2").trigger("prev.owl.carousel");
+            })
+            $(".slider-navbar .next-btn").click(function () {
+                $(".product-slider-2").trigger("next.owl.carousel");
+            })
+            $(".slider-navbar .latest-prev-btn").click(function () {
+                $(".product-slider-3").trigger("prev.owl.carousel");
+            })
+            $(".slider-navbar .latest-next-btn").click(function () {
+                $(".product-slider-3").trigger("next.owl.carousel");
+            })
+            $(".slider-navbar .featured-prev-btn").click(function () {
+                $(".product-slider-4").trigger("prev.owl.carousel");
+            })
+            $(".slider-navbar .featured-next-btn").click(function () {
+                $(".product-slider-4").trigger("next.owl.carousel");
+            })
+            $(".slider-navbar .deal-prev-btn").click(function () {
+                $(".product-slider-5").trigger("prev.owl.carousel");
+            })
+            $(".slider-navbar .deal-next-btn").click(function () {
+                $(".product-slider-5").trigger("next.owl.carousel");
+            })
+            $(".logo-slider-wall .logo-prev-btn").click(function () {
+                $(".logo-slider").trigger("prev.owl.carousel");
+            })
+            $(".logo-slider-wall .logo-next-btn").click(function () {
+                $(".logo-slider").trigger("next.owl.carousel");
+            })
+            $(".client-testimonials-prev-btn").click(function () {
+                $(".client-testimonials-slider").trigger("prev.owl.carousel");
+            })
+            $(".client-testimonials-next-btn").click(function () {
+                $(".client-testimonials-slider").trigger("next.owl.carousel");
+            })
+            $(".blog-prev-btn").click(function () {
+                $(".blog-slider").trigger("prev.owl.carousel");
+            })
+            $(".blog-next-btn").click(function () {
+                $(".blog-slider").trigger("next.owl.carousel");
+            })
+
+
+            $("#fashion").click(function () {
+
+                var otherSliders = $(".product-slider-2").not("#fashion-slider");
+                $(".product-slider-2").removeClass("d-block d-none");
+                otherSliders.addClass("d-none ");
+                $("#fashion-slider").addClass("d-block");
+            })
+
+            $("#electronic").click(function () {
+
+                var otherSliders = $(".product-slider-2").not("#electronic-slider");
+                $(".product-slider-2").removeClass("d-block d-none");
+                otherSliders.addClass("d-none");
+                $("#electronic-slider").addClass("d-block");
+            })
+            $("#furniture").click(function () {
+
+                var otherSliders = $(".product-slider-2").not("#furniture-slider");
+                $(".product-slider-2").removeClass("d-block d-none");
+                otherSliders.addClass("d-none");
+                $("#furniture-slider").addClass("d-block");
+            })
+
+        });
+    </script>
+
+</body>
+
+</html>

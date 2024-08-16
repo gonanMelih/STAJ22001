@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/bakilda-histori" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+
+
+
+    <style>
+        .text-font {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .arkaplan {
+            width: 100%;
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.57) 16.65%, #000 100.78%), url(breadcrumb-img.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .footer-arkaplan {
+            width: 100%;
+            background-image: url(footer-bg.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .footer-link div {
+            margin-bottom: 6px;
+        }
+
+        .footer-link div a:hover {
+            color: #ff7300;
+            transition: 0.2s;
+        }
+
+        .footer-end-link a:hover {
+            color: #FD9900;
+            transition: color 0.2s;
+        }
+
+        .footer-end-icon a i {
+            transition: color 0.3s, transform 0.3s;
+
+        }
+
+        .footer-end-icon a:hover i {
+            color: #FD9900;
+
+            transform: translateY(-5px);
+        }
+
+
+
+        .footer-arkaplan h3 {
+            color: white;
+        }
+
+        .footer-arkaplan-row {
+            padding-top: 80px;
+            padding-bottom: 30px;
+        }
+
+        .footer-card-background {
+            background-image: url(footer-subscribe-bg.png);
+            border-radius: 15px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .breadcrumb-item+.breadcrumb-item::before {
+            content: "\f054";
+            /* Font Awesome unicode değeri */
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            color: #ffffff;
+            /* Renk */
+            margin: 0 5px;
+            /* Simgenin iki tarafındaki boşluk */
+        }
+
+        .kart-link {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 500;
+            font-style: normal;
+            color: black;
+        }
+
+        .kart-icon {
+            color: #ff7300;
+            background-color: #FFFAF2;
+            border-radius: 50%;
+            margin: 0 auto;
+            padding: 10px 13px;
+            transition: .3s;
+        }
+
+        .card:hover .kart-icon {
+            background-color: black;
+            animation: zoominitial 0.4s ease-in-out alternate;
+            transition: .3s;
+            font-size: 20px;
+            color: white;
+        }
+
+        .owl-carousel .item img {
+            height: auto;
+            display: block;
+            width: 204.333px;
+        }
+
+        .footer-end-link a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+
+        .contact-title {
+            margin-top: 30px;
+        }
+
+
+
+        .breadcrumb {
+            margin-bottom: 30px;
+        }
+
+
+        .animated-button {
+            transition: 0.3s;
+            position: relative;
+        }
+
+        .animated-button span {
+            display: inline-block;
+            position: relative;
+            transition: transform 0.3s, opacity 0.3s, font-size 0.3s;
+        }
+
+        .animated-button:hover span {
+            animation: moveAndStretchText 0.5s ease-in-out;
+        }
+
+        .owlContent {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .owlIcon {
+
+            display: flex;
+            height: 100%;
+            width: 100%;
+            background: rgb(21, 22, 23, 0);
+            justify-content: center;
+            align-items: center;
+            top: 100%;
+            transition: 0.5s ease;
+        }
+
+        .owlContent:hover .owlIcon {
+            top: 0%;
+            background: linear-gradient(rgba(21, 22, 23, 0), rgba(21, 22, 23, 0.8));
+        }
+
+
+
+        .owlContent:hover .owlIcon i {
+            transform: rotateX(360deg);
+        }
+
+        .instagramIcon {
+            font-size: 16px;
+            color: white;
+            transition: 0.7s ease;
+            padding: 14px;
+        }
+
+
+
+
+
+        @keyframes moveAndStretchText {
+            0% {
+                transform: translateY(0) scaleY(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: translateY(-40%) scaleY(1.5);
+                opacity: 0;
+            }
+
+            50.01% {
+                transform: translateY(40%) scaleY(1.5);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0) scaleY(1);
+                opacity: 1;
+            }
+        }
+
+        @media only screen and (min-width:991.98px) {
+            .contact-title {
+                margin-top: 120px;
+            }
+
+            .breadcrumb {
+                margin-bottom: 90px;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-light-subtle">
+
+    <div class="arkaplan">
+        
+        <hr class="text-white">
+        <div>
+            <div class="d-flex  gap-3 flex-column align-items-center ">
+                <div class="text-white mt-4">
+                    <h1 class="contact-title" style="font-weight: 400;font-family: 'Bakilda Histori',sans-serif;">
+                        Contact Us</h1>
+                </div>
+                <div class="mb-5 text-font">
+                    <ol class="breadcrumb text-white text-family">
+                        <li class="breadcrumb-item ">Home</li>
+                        <li class="breadcrumb-item">Contact Us</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- contact -->
+    <div class="text-font" style="margin-top: -50px; margin-bottom: 120px;">
+        <div class="container">
+            <div class="row g-3">
+                <!-- Email -->
+
+                <div class="col-11 col-md-6 col-lg-4 mx-auto">
+                    <div class="card border-0 shadow rounded-4" style="height: 170px;">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <i class="fa-regular fa-envelope kart-icon"></i>
+                            <p class="text-muted my-2">Email Us</p>
+                            <a href="#" class="mb-3 kart-link">support@epicurean.com</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- CAll -->
+                <div class="col-11 col-md-6 col-lg-4 mx-auto">
+                    <div class="card border-0 shadow rounded-4" style="height: 170px;">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+
+                            <i class="fa-solid fa-phone kart-icon"></i>
+                            <p class="text-muted my-2">Call Us</p>
+                            <a href="#" class="mb-3 kart-link">(684) 555 0102</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Location -->
+                <div class="col-11 col-md-6 col-lg-4 mx-auto ">
+                    <div class="card border-0 shadow rounded-4" style="height: 170px;">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                            <i class="fa-solid fa-location-dot kart-icon "></i>
+                            <p class="text-muted my-2">Location</p>
+                            <a href="#" class=" kart-link mb-3">1616 Broadway NY, New York</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- form -->
+    <div class="text-font container justify-content-center" style="margin-bottom: 120px;">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+
+                <p style="color: #ff7300;" class="text-center">Contact Us</p>
+                <h1 class="text-center" style="margin-bottom: 60px; font-family: 'Bakilda Histori',sans-serif;">Have Any
+                    Questions?</h1>
+
+                <div class="row mb-4 mx-auto">
+                    <p class=" text-muted px-0 mb-0">Write comment</p>
+                    <textarea class="form-control rounded-0" rows="5" placeholder="Type your comment"></textarea>
+                </div>
+
+                <div class="row mb-4">
+
+                    <div class="col-lg-4  mb-3 mx-auto">
+                        <p class=" text-muted mb-0">Full name</p>
+                        <div class="form-floating">
+                            <input id="form-floating-name" type="text" class="form-control rounded-0"
+                                placeholder="Enter your name">
+                            <label for="form-floating-name">Enter your name</label>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4  mb-3 mx-auto">
+                        <p class=" text-muted mb-0">Email</p>
+                        <div class="form-floating">
+                            <input id="form-floating-email" type="email" class="form-control rounded-0"
+                                placeholder="Enter yoru Email">
+                            <label for="form-floating-email">Enter your email</label>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 mb-3 mx-auto ">
+                        <p class=" text-muted mb-0">Phone Number</p>
+                        <div class="form-floating">
+                            <input id="form-floating-number" type="text" class="form-control rounded-0"
+                                placeholder="Enter your phone number">
+                            <label for="form-floating-number">Enter your phone number</label>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="animated-button btn btn-lg float-start rounded-0 text-white"
+                    style="background-color:#FD9900;"><span>Submitted now</span></button>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- owl carousel -->
+    <div class="container-fluid">
+        <div class="owl-carousel owl-theme">
+
+            <!-- item 1 -->
+            <div class="item" style="width: 176.333px;">
+                <a href="#">
+                    <div class="owlContent position-relative overflow-hidden">
+                        <div class="owlImage">
+
+                            <img src="instagram-1.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="owlIcon position-absolute">
+                            <i class="fa-brands instagramIcon  fa-instagram  rounded-circle"
+                                style="color: white; background-color: #FD9900;"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="item" style="width: 176.333px;">
+                <a href="#">
+                    <div class="owlContent position-relative overflow-hidden">
+                        <div class="owlImage">
+
+                            <img src="instagram-2.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="owlIcon position-absolute">
+                            <i class="fa-brands  fa-instagram instagramIcon  rounded-circle"
+                                style="color: white; background-color: #FD9900;"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="item" style="width: 176.333px;">
+                <a href="#">
+                    <div class="owlContent position-relative overflow-hidden">
+                        <div class="owlImage">
+
+                            <img src="instagram-3.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="owlIcon position-absolute">
+                            <i class="fa-brands  fa-instagram instagramIcon  rounded-circle"
+                                style="color: white; background-color: #FD9900;"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="item" style="width: 176.333px;">
+                <a href="#">
+                    <div class="owlContent position-relative overflow-hidden">
+                        <div class="owlImage">
+
+                            <img src="instagram-4.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="owlIcon position-absolute">
+                            <i class="fa-brands  fa-instagram instagramIcon rounded-circle"
+                                style="color: white; background-color: #FD9900;"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div class="container-fluid mt-2 footer-arkaplan text-font">
+        <div class="container">
+            <div class="row footer-arkaplan-row  justify-content-evenly" style="border-bottom: 1px solid #57575A;">
+                <!-- Product -->
+                <div class="col-12 col-md-6 col-lg-2">
+                    <div class="d-flex flex-column footer-link">
+                        <h3>Product</h3>
+                        <div><a href="#">Breakfast</a></div>
+                        <div><a href="#">Lunch</a></div>
+                        <div><a href="#">Desserts</a></div>
+                        <div><a href="#">Dinner</a></div>
+                        <div><a href="#">Book a table</a></div>
+                        <div><a href="#">Our Chefs</a></div>
+
+                    </div>
+
+                </div>
+                <!-- Information -->
+                <div class="col-12 col-md-6 col-lg-2">
+                    <div class="d-flex flex-column footer-link">
+                        <div>
+                            <h3>Information</h3>
+                        </div>
+                        <div><a href="#">FAQ</a></div>
+                        <div><a href="#">Blog</a></div>
+                        <div><a href="#">Support</a></div>
+                    </div>
+
+                </div>
+                <!-- Company -->
+                <div class="col-12 col-md-6 col-lg-2 ">
+                    <div class="d-flex flex-column footer-link">
+                        <h3>Company</h3>
+                        <div><a href="#">About Us</a></div>
+                        <div><a href="#">Our Menu</a></div>
+                        <div><a href="#">Contact Us</a></div>
+                        <div><a href="#">Exicurean</a></div>
+
+                    </div>
+                </div>
+                <!-- Subscribe -->
+                <div class="col-12 col-md-6 col-lg-5 p-2 mt-3 bg-white bg-opacity-10 rounded-4">
+                    <div class="bg-transparent p-3 p-md-2 p-lg-3">
+                        <div class="footer-card-background text-white">
+                            <div class="py-4 ps-4 py-md-0 p-lg-1 ps-lg-4">
+                                <p class="mt-2 mb-2 ">Subscribe</p>
+                                <h2 class="mb-3">Our News Letter</h2>
+                                <p class="">To Get Regular Update</p>
+                            </div>
+                        </div>
+                        <div class="row g-4 g-md-2 g-lg-4 m-0 ">
+                            <div class="col-8 col-md-6 col-lg-8 p-0 pe-4 pe-md-3 pe-lg-4">
+                                <input type="email" class=" form-control form-control-lg"
+                                    placeholder="Enter your email">
+                            </div>
+                            <button type="submit"
+                                class="animated-button col-4 col-md-6 col-lg-4 btn btn-lg rounded-3 text-white"
+                                style="background-color:#FD9900 ;"><span>Subscribe</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row justify-content-between">
+
+                <div class="col-lg-4 p-4">
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <a href="#">
+                            <img src="logo-two.svg" alt="">
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class=" col-lg-4  d-flex flex-column justify-content-center">
+                    <div class="footer-end-link m-auto">
+                        <a href="#" class="me-3">Terms</a>
+                        <a href="#" class="me-3">Privacy</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 my-4 d-flex flex-lg-column flex-row justify-content-center align-items-lg-end">
+                    <div class="footer-end-icon ">
+                        <a href="#" class="me-3"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="me-3"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="me-3"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                center: true,
+                nav: false,
+                dots: false,
+                autoWidth: true,
+                loop: true,
+                margin: 10,
+
+            });
+        });
+    </script>
+</body>
+</html>

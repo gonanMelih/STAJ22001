@@ -1,0 +1,430 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.montserrat {
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+.hareketli-arkaplan {
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: relative;
+    background-image: url(hero-two-bg-1.jpg);
+    box-sizing: content-box;
+    background-position: center;
+    background-size: cover;
+    animation: moving 10s linear infinite;
+    transition: transform 10s linear, background-image 1s ease-in-out;
+}
+
+.hareketli-arkaplan-renk {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.37) 16.65%, #000 100.78%);
+
+
+}
+
+.baslik {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+
+}
+
+.baslik p {
+    margin-bottom: 4px;
+    font-weight: 700;
+    letter-spacing: 0.16px;
+}
+
+.baslik h1 {
+    font-size: clamp(34px, 4vw, 70px);
+
+    line-height: 1.11;
+    margin: 15px 0 20px;
+}
+
+
+
+@keyframes moving {
+    0% {
+
+        transform: scale(1);
+        transform-origin: 50% 50%;
+
+    }
+
+    90% {
+        transform: scale(1.2);
+        transform-origin: 80% 50%;
+    }
+
+    100% {
+        transform: scale(1.2);
+        transform-origin: 80% 50%;
+    }
+
+}
+
+
+.section-title h2 {
+    font-size: 44px;
+    line-height: 1.3;
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .section-title h2 {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .section-title h2 {
+        font-size: 26px;
+    }
+}
+
+
+
+
+
+
+.animated-button {
+    transition: 0.3s;
+    position: relative;
+}
+
+.animated-button span {
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s, opacity 0.3s, font-size 0.3s;
+}
+
+.animated-button:hover span {
+    animation: moveAndStretchText 0.5s ease-in-out;
+}
+
+
+@keyframes moveAndStretchText {
+    0% {
+        transform: translateY(0) scaleY(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(-40%) scaleY(1.5);
+        opacity: 0;
+    }
+
+    50.01% {
+        transform: translateY(40%) scaleY(1.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0) scaleY(1);
+        opacity: 1;
+    }
+}
+
+
+.arkaplan-sekli {
+    top: -45px;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    z-index: 2;
+    background-color: black;
+    clip-path: url(#clipPath);
+}
+
+
+
+
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.foods {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.foods .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.foods .item img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.new-recipe img {
+    box-sizing: border-box;
+    border-radius: 24px;
+    border: 10px solid #F8F8F8;
+}
+
+
+.new-recipe .item:hover img {
+    border: 10px solid rgba(0, 0, 0, 0.37);
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+.bilgiler span,
+em {
+    font-family: 'Bakilda Histori', sans-serif;
+}
+
+.bilgiler em {
+    font-size: 48px;
+}
+
+.bilgiler p {
+    margin: 0;
+    color: #53565C;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: light;
+
+}
+
+
+
+
+@media only screen and (max-width:575.98px) {
+
+    .hareketli-arkaplan h1 {
+        margin-top: 260px;
+        margin-bottom: 260px;
+    }
+
+    .hareketli-arkaplan-renk h1 {
+        margin-top: 520px;
+        margin-bottom: 520px;
+    }
+
+    .baslik {
+        padding-top: 170px;
+    }
+
+    .bilgiler span {
+        font-size: 55px;
+    }
+
+    .bilgiler p {
+        font-size: 18px;
+    }
+
+    .owl-item.center .item {
+        transform: scale(1.7);
+        transform-origin: center;
+        transition: transform 1s;
+    }
+
+
+
+}
+
+@media only screen and (min-width:576px) {
+
+    .hareketli-arkaplan h1 {
+        margin-top: 260px;
+        margin-bottom: 260px;
+    }
+
+    .hareketli-arkaplan-renk h1 {
+        margin-top: 515px;
+        margin-bottom: 520px;
+    }
+
+    .baslik {
+        padding-top: 190px;
+    }
+
+    .bilgiler span {
+        font-size: 55px;
+    }
+
+    .owl-item.center .item {
+        transform: scale(1.7);
+        transform-origin: center;
+        transition: transform 1s;
+    }
+}
+
+@media only screen and (min-width:767.98px) {
+
+    .hareketli-arkaplan h1 {
+        margin-top: 240px;
+        margin-bottom: 240px;
+    }
+
+    .hareketli-arkaplan-renk h1 {
+        margin-top: 480px;
+        margin-bottom: 480px;
+    }
+
+    .owl-item.center .item {
+        transform: scale(2);
+        transform-origin: center;
+        transition: transform 1s;
+    }
+
+
+
+}
+
+
+@media only screen and (min-width:991.98px) {
+
+    .hareketli-arkaplan h1 {
+        margin-top: 310px;
+        margin-bottom: 310px;
+    }
+
+    .hareketli-arkaplan-renk h1 {
+        margin-top: 620px;
+        margin-bottom: 620px;
+    }
+
+    .baslik {
+        padding-top: 200px;
+        padding-bottom: 100px;
+
+    }
+
+    .bilgiler span {
+        font-size: 66px;
+    }
+
+    .bilgiler p {
+        font-size: 24px;
+    }
+
+}
+
+@media only screen and (min-width:1399.98px) {
+
+    .hareketli-arkaplan h1 {
+        margin-bottom: 350px;
+    }
+
+    .hareketli-arkaplan-renk h1 {
+        margin-bottom: 660px;
+    }
+
+}
+
+
+.checklist li {
+    list-style: none;
+}
+
+
+.Count-Title {
+	color: whitesmoke;
+	font-size: 50px;
+	font-family: 'Dosis', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+}
+.MainCounts {
+	margin-left: 70px;
+}
+
+.MainCount {
+	position: relative;
+	margin-left: 70px;
+}
+.MainCount::after {
+	content: '';
+	position: absolute;
+	right: -50px;
+	top: -35px;
+	bottom: 0;
+	width: 3px;
+	background: url(https://epicurean.netlify.app/epicurean/assets/images/shapes/cta-sp.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    display: none;
+}
+@media(min-width:992px){
+    .MainCount::after{
+        display: block;
+    }
+}
+.Counts2 {
+    background: rgba(0, 0, 0, 1);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+.Count-Span {
+	color: whitesmoke;
+	font-size: 35px !important;
+	font-family: 'Dosis', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+}
+.Count-P {
+	font-size: 30px;
+	margin-top: 20px;
+	color: whitesmoke;
+	font-family: 'Dosis', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+}
+.Count-Circle {
+	background: url(https://epicurean.netlify.app/epicurean/assets/images/shape/time-bg.svg);
+	height: 150px;
+	width: 150px;
+	padding: 30px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+
+
+
+
+
